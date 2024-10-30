@@ -15,14 +15,16 @@
 
 body {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 0 30px;
     height: 100vh;
     background-color: var(--lighter-green);
 }
 
 .modal {
     position: absolute;
+    align-self: flex-start;
     padding: 20px;
     margin-top: 15px;    
     background-color: var(--dark-gray);
@@ -46,8 +48,7 @@ form {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: auto 20px;
-    width: 590px;
+    flex: 0 1 600px;    
     background-color: white;
     padding: 30px;
     border-radius: 15px;
@@ -181,9 +182,4 @@ span p{
         display: flex;
         flex-direction: column;
     }
-
-    form {
-        width: auto;
-    }
-
 }
