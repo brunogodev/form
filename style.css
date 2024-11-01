@@ -63,6 +63,12 @@ form {
     width: 100%;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: 2px solid var(--dark-green);
+}
+
 .names,
 .radios-container {
     display: flex;
@@ -104,7 +110,7 @@ input[type="radio"] {
 }
 
 input:hover {
-    border: 2px solid var(--dark-green);
+    outline: 1px solid var(--dark-green);
 }
 
 .checkbox-container {
